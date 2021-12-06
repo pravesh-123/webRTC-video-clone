@@ -1,4 +1,6 @@
-const socket = io("ws://116.206.156.117", { transports: ["websocket"] });
+const socket = io("wss://54.88.59.233:3000/websocket", {
+  transports: ["websocket"],
+});
 const videoGrid = document.getElementById("video-grid");
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
