@@ -1,4 +1,4 @@
-const socket = io("/");
+const socket = io("http://116.206.156.117");
 const videoGrid = document.getElementById("video-grid");
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
