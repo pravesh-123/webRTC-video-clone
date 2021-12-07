@@ -1,5 +1,5 @@
 //wss://54.88.59.233:3000
-const socket = io("ws://f614-116-206-156-117.ngrok.io ");
+const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
