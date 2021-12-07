@@ -1,12 +1,10 @@
-const socket = io("wss://54.88.59.233:3000/websocket", {
-  transports: ["websocket"],
-  secure: true,
-});
+//wss://54.88.59.233:3000
+const socket = io("ws://f614-116-206-156-117.ngrok.io ");
 const videoGrid = document.getElementById("video-grid");
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
   host: "/",
-  port: "443",
+  port: "3030",
 });
 let myVideoStream;
 const myVideo = document.createElement("video");
